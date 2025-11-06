@@ -6,8 +6,8 @@ XSS Prediction Script (Character n-gram version)
 import pickle
 
 # Load saved model (.sav) and char-level vectorizer
-loaded_model = pickle.load(open(r"C:\Users\Asus\Desktop\xss_streamlit\trained_xss_char.sav", 'rb'))
-tfidf_vectorizer_char = pickle.load(open(r"C:\Users\Asus\Desktop\xss_streamlit\tfidf_vectorizer_char.sav", 'rb'))
+loaded_model = pickle.load(open("trained_xss_char.sav", 'rb'))
+tfidf_vectorizer_char = pickle.load(open("tfidf_vectorizer_char.sav", 'rb'))
 
 def xss_prediction(payload):
     """
